@@ -78,8 +78,6 @@ int main(int argc, char** argv) {
 	HANDLE process_snapshot = 0;
 	PROCESSENTRY32 pe32 = { 0 };
 
-	DWORD exitCode = 0;
-
 	pe32.dwSize = sizeof(PROCESSENTRY32);
 
 	process_snapshot = CreateToolhelp32Snapshot(TH32CS_SNAPPROCESS, 0);
